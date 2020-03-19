@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+</head>
+
+<style>
+.sidepanel{
+    width: 15%;
+    height: 100%;
+    background-color:#44749d;
+    position: fixed;
+    transition: width 1s;
+    padding-left: 10px;
+}
+.main{
+    width: 53%;
+    margin-left: 16%;
+    
+}
+.main2{
+    width: 60%;
+    margin-left: 0px;
+}
+.sidepanel2{
+    width: 0;
+    height: 15%;
+    background-color: #44749d;
+    position: fixed;
+    overflow: auto;
+}
+.gallery{
+    width: 23.3%;
+    height: 100px;
+    margin: 5px 5px 5px 5px;
+    background-color: #c6d4e1;
+    float: left;
+}
+
+.gallery2{
+    width: 100%;
+    height: 220px;
+    margin: 5px 5px 5px 5px;
+    background-color: #c6d4e1;
+    float: left;
+}
+.gallery3{
+    width: 100%;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+    background-color: #c6d4e1;
+    float: left ;
+}
+
+.badan2{
+    width: 30%;
+    margin-left: 62%;
+    
+}
+.badan{
+    width: 15%;
+    margin-left: 70%;
+}
+.galleryb{
+    width: 100%;
+    height: 490px;  
+    margin: -5px 5px 5px 5px;
+    background-color: #ebe7e0;
+}
+</style>
+<body>
+<div class="kelas">
+    <div class="sidepanel2" id="sidepanel">
+    <span style="font-size: 30px;cursor: pointer" onclick="closeNav()">X</span>
+
+    </div>
+    
+    <div class="main2" id="main">
+        <span style="font-size: 30px;cursor: pointer" onclick="openNav()">&#9776;</span>
+        <h1>
+        <div class="gallery">
+        <p></p>
+        </div>
+        <div class="gallery" >
+        <p></p>
+        </div>
+        <div class="gallery">
+            <p></p>
+        </div>
+        <div class="gallery">
+            <p></p>
+        </div></h1>
+        <h1>
+            <div class="gallery2">
+                <p></p>
+            </div>  
+        </h1>
+
+        <h1>
+            <div class="gallery3">
+                <p></p>
+            </div>  
+        </h1>
+    </div>
+
+    <div class="badan2" id="badan">
+        <h1>
+            <div class="galleryb">
+                <p></p>
+            </div>  
+        </h1>
+
+        
+        
+    </div>
+</div>
+
+    
+
+    <script>
+        function closeNav(){
+            document.getElementById('sidepanel').className="sidepanel2";
+            document.getElementById('main').className="main2";
+            document.getElementById('badan').className="badan2";
+        }
+        function openNav(){
+            document.getElementById('sidepanel').className="sidepanel";
+            document.getElementById('main').className="main";
+            document.getElementById('badan').className="badan";
+        }
+    </script>
+</body>
+</html>
