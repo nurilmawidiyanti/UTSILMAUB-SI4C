@@ -31,7 +31,7 @@
     position: fixed;
     overflow: auto;
 }
-.gallery{
+.gall{
     width: 23.3%;
     height: 100px;
     margin: 5px 5px 5px 5px;
@@ -39,14 +39,14 @@
     float: left;
 }
 
-.gallery2{
+.gall2{
     width: 100%;
     height: 220px;
     margin: 5px 5px 5px 5px;
     background-color: #c6d4e1;
     float: left;
 }
-.gallery3{
+.gall3{
     width: 100%;
     height: 150px;
     margin: 5px 5px 5px 5px;
@@ -54,12 +54,12 @@
     float: left ;
 }
 
-.badan2{
+.body2{
     width: 30%;
     margin-left: 62%;
     
 }
-.badan{
+.body{
     width: 15%;
     margin-left: 70%;
 }
@@ -80,32 +80,32 @@
     <div class="main2" id="main">
         <span style="font-size: 30px;cursor: pointer" onclick="openNav()">&#9776;</span>
         <h1>
-        <div class="gallery">
+        <div class="gall">
         <p></p>
         </div>
-        <div class="gallery" >
+        <div class="gall" >
         <p></p>
         </div>
-        <div class="gallery">
+        <div class="gall">
             <p></p>
         </div>
-        <div class="gallery">
+        <div class="gall">
             <p></p>
         </div></h1>
         <h1>
-            <div class="gallery2">
+            <div class="gall2">
                 <p></p>
             </div>  
         </h1>
 
         <h1>
-            <div class="gallery3">
+            <div class="gall3">
                 <p></p>
             </div>  
         </h1>
     </div>
 
-    <div class="badan2" id="badan">
+    <div class="body2" id="body">
         <h1>
             <div class="galleryb">
                 <p></p>
@@ -123,12 +123,12 @@
         function closeNav(){
             document.getElementById('sidepanel').className="sidepanel2";
             document.getElementById('main').className="main2";
-            document.getElementById('badan').className="badan2";
+            document.getElementById('badan').className="body2";
         }
         function openNav(){
             document.getElementById('sidepanel').className="sidepanel";
             document.getElementById('main').className="main";
-            document.getElementById('badan').className="badan";
+            document.getElementById('badan').className="body";
         }
     </script>
 </body>
